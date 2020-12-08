@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cab0949af6de4cc9ae2e6c6c7ad51486" Name="Diagram1">
+        <EntityTypeShape EntityType="ProyectoProgra5Model.Adiccion" Width="1.5" PointX="6" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoProgra5Model.Adiccion_Usuario" Width="1.5" PointX="8.25" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoProgra5Model.Cobertura_Poliza" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoProgra5Model.Registro_Poliza" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoProgra5Model.Tipo_Poliza" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoProgra5Model.Tipo_Usuario" Width="1.5" PointX="3.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoProgra5Model.Usuario" Width="1.5" PointX="6" PointY="4.625" IsExpanded="true" />
+        <AssociationConnector Association="ProyectoProgra5Model.FK__Adiccion___Cod_A__2DE6D218" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoProgra5Model.FK__Adiccion___Cod_A__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoProgra5Model.FK__Adiccion___Cod_A__671F4F74" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoProgra5Model.FK__Adiccion___Cod_A__74AE54BC" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoProgra5Model.FK__Adiccion___Cod_U__2EDAF651" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoProgra5Model.FK__Adiccion___Cod_U__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoProgra5Model.FK__Adiccion___Cod_U__681373AD" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoProgra5Model.FK__Adiccion___Cod_U__75A278F5" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoProgra5Model.FK__Registro___Cod_C__2FCF1A8A" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoProgra5Model.FK__Registro___Cod_C__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoProgra5Model.FK__Registro___Cod_C__690797E6" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoProgra5Model.FK__Registro___Cod_C__76969D2E" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoProgra5Model.FK__Usuario__Cod_Cob__32AB8735" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoProgra5Model.FK__Usuario__Cod_Cob__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoProgra5Model.FK__Usuario__Cod_Cob__6BE40491" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoProgra5Model.FK__Usuario__Cod_Cob__797309D9" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoProgra5Model.FK__Registro___Cod_C__30C33EC3" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoProgra5Model.FK__Registro___Cod_C__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoProgra5Model.FK__Registro___Cod_C__69FBBC1F" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoProgra5Model.FK__Registro___Cod_C__778AC167" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoProgra5Model.FK__Registro___Cod_T__31B762FC" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoProgra5Model.FK__Registro___Cod_T__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoProgra5Model.FK__Registro___Cod_T__6AEFE058" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoProgra5Model.FK__Registro___Cod_T__787EE5A0" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoProgra5Model.FK__Usuario__Cod_Tip__339FAB6E" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoProgra5Model.FK__Usuario__Cod_Tip__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoProgra5Model.FK__Usuario__Cod_Tip__6CD828CA" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoProgra5Model.FK__Usuario__Cod_Tip__7A672E12" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
