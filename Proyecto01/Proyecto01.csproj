@@ -44,8 +44,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -53,10 +56,27 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -121,7 +141,20 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Formularios\frmInicio.aspx" />
+    <Content Include="Formularios\frmInsertarAdiccion.aspx" />
+    <Content Include="Formularios\frmInsertaUsuario.aspx" />
+    <Content Include="Formularios\frmListarAdicciones.aspx" />
+    <Content Include="Formularios\frmListarCoberturaPoliza.aspx" />
+    <Content Include="Formularios\frmListaUsuarios.aspx" />
+    <Content Include="Formularios\frmLogin.aspx" />
+    <Content Include="Formularios\frmModificarAdicciones.aspx" />
     <Content Include="Formularios\frmRegistroUsuario.aspx" />
+    <Content Include="Formularios\image\imagen1.jfif" />
+    <Content Include="Formularios\image\imagen2.jfif" />
+    <Content Include="Formularios\image\imagen3.jfif" />
+    <Content Include="Formularios\image\imagen4.jfif" />
+    <Content Include="Formularios\PanelAdministracion.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -132,17 +165,23 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="MasterPages\PaginaMaestra.Master" />
-    <EntityDeploy Include="Modelo\Polizas.edmx">
+    <EntityDeploy Include="Modelo\ModeloBD.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Polizas.Designer.cs</LastGenOutput>
+      <LastGenOutput>ModeloBD.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Modelo\Polizas.edmx.diagram">
-      <DependentUpon>Polizas.edmx</DependentUpon>
-    </None>
+    <Content Include="Modelo\ModeloBD.edmx.diagram">
+      <DependentUpon>ModeloBD.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
-    <Content Include="Modelo\Polizas.Context.tt">
+    <Content Include="Modelo\ModeloBD.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Polizas.Context.cs</LastGenOutput>
+      <DependentUpon>ModeloBD.edmx</DependentUpon>
+      <LastGenOutput>ModeloBD.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Modelo\ModeloBD.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModeloBD.edmx</DependentUpon>
+      <LastGenOutput>ModeloBD.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -188,6 +227,9 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Clases\ControladorBD.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -202,12 +244,75 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frmInicio.aspx.cs">
+      <DependentUpon>frmInicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmInicio.aspx.designer.cs">
+      <DependentUpon>frmInicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmInsertarAdiccion.aspx.cs">
+      <DependentUpon>frmInsertarAdiccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmInsertarAdiccion.aspx.designer.cs">
+      <DependentUpon>frmInsertarAdiccion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmInsertaUsuario.aspx.cs">
+      <DependentUpon>frmInsertaUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmInsertaUsuario.aspx.designer.cs">
+      <DependentUpon>frmInsertaUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmListarAdicciones.aspx.cs">
+      <DependentUpon>frmListarAdicciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmListarAdicciones.aspx.designer.cs">
+      <DependentUpon>frmListarAdicciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmListarCoberturaPoliza.aspx.cs">
+      <DependentUpon>frmListarCoberturaPoliza.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmListarCoberturaPoliza.aspx.designer.cs">
+      <DependentUpon>frmListarCoberturaPoliza.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmListaUsuarios.aspx.cs">
+      <DependentUpon>frmListaUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmListaUsuarios.aspx.designer.cs">
+      <DependentUpon>frmListaUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmLogin.aspx.cs">
+      <DependentUpon>frmLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmLogin.aspx.designer.cs">
+      <DependentUpon>frmLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmModificarAdicciones.aspx.cs">
+      <DependentUpon>frmModificarAdicciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmModificarAdicciones.aspx.designer.cs">
+      <DependentUpon>frmModificarAdicciones.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmRegistroUsuario.aspx.cs">
       <DependentUpon>frmRegistroUsuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Formularios\frmRegistroUsuario.aspx.designer.cs">
       <DependentUpon>frmRegistroUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\PanelAdministracion.aspx.cs">
+      <DependentUpon>PanelAdministracion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\PanelAdministracion.aspx.designer.cs">
+      <DependentUpon>PanelAdministracion.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -219,15 +324,74 @@
     <Compile Include="MasterPages\PaginaMaestra.Master.designer.cs">
       <DependentUpon>PaginaMaestra.Master</DependentUpon>
     </Compile>
-    <Compile Include="Modelo\Polizas.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Polizas.Context.tt</DependentUpon>
+    <Compile Include="Modelo\Adiccion.cs">
+      <DependentUpon>ModeloBD.tt</DependentUpon>
     </Compile>
-    <Compile Include="Modelo\Polizas.Designer.cs">
+    <Compile Include="Modelo\Adiccion_Usuario.cs">
+      <DependentUpon>ModeloBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Cobertura_Poliza.cs">
+      <DependentUpon>ModeloBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\listarUsuarios5_Result.cs">
+      <DependentUpon>ModeloBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\listarUsuariosWhere5_Result.cs">
+      <DependentUpon>ModeloBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\ModeloBD.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Polizas.edmx</DependentUpon>
+      <DependentUpon>ModeloBD.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\ModeloBD.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\ModeloBD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloBD.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Registro_Poliza.cs">
+      <DependentUpon>ModeloBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\RetonarAdiccionID_Result.cs">
+      <DependentUpon>ModeloBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\RetornaAdiccionesUsuario_Result.cs">
+      <DependentUpon>ModeloBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\RetornaAdicciones_Result.cs">
+      <DependentUpon>ModeloBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\RetornaCobertura_PolizaWhere_Result.cs">
+      <DependentUpon>ModeloBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\RetornaCobertura_Poliza_Result.cs">
+      <DependentUpon>ModeloBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\RetornaCod_Usuario_Result.cs">
+      <DependentUpon>ModeloBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\RetornaPolizaUsuario_Result.cs">
+      <DependentUpon>ModeloBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\RetornaTipoUsuario2_Result.cs">
+      <DependentUpon>ModeloBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\RetornaUsuario_Result.cs">
+      <DependentUpon>ModeloBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Tipo_Poliza.cs">
+      <DependentUpon>ModeloBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Tipo_Usuario.cs">
+      <DependentUpon>ModeloBD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Usuario.cs">
+      <DependentUpon>ModeloBD.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
@@ -254,7 +418,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Formularios\image\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

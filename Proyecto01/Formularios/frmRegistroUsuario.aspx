@@ -116,6 +116,7 @@
                     <center>
                     <div class="form-horizontal">
                         <div class="col-md-12">
+                            <asp:Button ID="Button1" runat="server" Text="Button" />
                             <asp:Button ID="btnInsertar" runat="server" class="btn btn-success  btn-lg" Text="Registrar Usuario" OnClick="btnInsertar_Click"  />
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <input type="reset" value="Limpiar" class="btn btn-info btn-lg " />

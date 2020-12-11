@@ -7,12 +7,14 @@ using System.Web.UI.WebControls;
 using System.Text;
 using System.Net.Mail;
 using System.Net;
+using Proyecto01.Modelo;
 
 namespace Proyecto01.Formularios
 {
+   
     public partial class frmRegistroUsuario : System.Web.UI.Page
     {
-       
+        ProyectoProgra5Entities1 modeloBD = new ProyectoProgra5Entities1();
         protected void Page_Load(object sender, EventArgs e)
         {
             //IsPostBack  es para cuando se refresca la página  o se carga la página
@@ -110,18 +112,18 @@ namespace Proyecto01.Formularios
         protected void btnInsertar_Click(object sender, EventArgs e)
         {
             AgregarUsuario();
-            senemail();
+            Sendemail();
 
         }
 
-        void senemail()
+        void Sendemail()
         {
             // Gmail Address from where you send the mail
             var fromAddress = "jenneraa@gmail.com";
             // any address where the email will be sending
             var toAddress = txtCorreo.Text;
             //Password of your gmail address
-            const string fromPassword = "Mvzc2121asd";
+            const string fromPassword = "Alessand28";
             // Passing the values and make a email formate to display
             string subject = "Su cuenta en Seguros El Equipo del Siglo XXI.";
             string body = "Estimado cliente:" + " " + txtPrimerApellido.Text + " " + txtSegundoApellido.Text + " " + txtNombre.Text + " " + "gracias por confiar en Seguros el Equipo del Siglo XXI. Para nosotros es un placer servirle";
