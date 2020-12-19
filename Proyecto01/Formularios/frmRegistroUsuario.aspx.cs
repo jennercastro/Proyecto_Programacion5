@@ -128,16 +128,18 @@ namespace Proyecto01.Formularios
             string subject = "Su cuenta en Seguros El Equipo del Siglo XXI.";
             string body = "Estimado cliente:" + " " + txtPrimerApellido.Text + " " + txtSegundoApellido.Text + " " + txtNombre.Text + " " + "gracias por confiar en Seguros el Equipo del Siglo XXI. Para nosotros es un placer servirle";
             // smtp settings
-            var smtp = new System.Net.Mail.SmtpClient();
+            var smtp = new SmtpClient();
             {
                 smtp.Host = "smtp.gmail.com";
                 smtp.Port = 587;
                 smtp.EnableSsl = true;
-                smtp.DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network;
+                smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
                 smtp.Credentials = new NetworkCredential(fromAddress, fromPassword);
                 smtp.Timeout = 20000;
+
+               
             }
-            // Passing values to smtp object
+            /// Passing values to smtp object
             smtp.Send(fromAddress, toAddress, subject, body);
         }
 

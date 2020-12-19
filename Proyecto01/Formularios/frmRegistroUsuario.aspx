@@ -83,7 +83,10 @@
                         
                          <div class="col-sm-4 form-group">
                             <label>Tipo de cobertura</label><br />
-                             <asp:DropDownList ID="DropListCobertura" runat="server"></asp:DropDownList>
+                             <asp:DropDownList ID="DropListCobertura" runat="server">
+                                 <asp:ListItem>1</asp:ListItem>
+                                 <asp:ListItem>2</asp:ListItem>
+                             </asp:DropDownList>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                              <asp:RequiredFieldValidator ID="rfvTipoCobertura" runat="server" ControlToValidate="DropListCobertura" ErrorMessage="Ingrese su tipo de Cobertura"></asp:RequiredFieldValidator>
                              <br />
@@ -116,7 +119,6 @@
                     <center>
                     <div class="form-horizontal">
                         <div class="col-md-12">
-                            <asp:Button ID="Button1" runat="server" Text="Button" />
                             <asp:Button ID="btnInsertar" runat="server" class="btn btn-success  btn-lg" Text="Registrar Usuario" OnClick="btnInsertar_Click"  />
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <input type="reset" value="Limpiar" class="btn btn-info btn-lg " />
