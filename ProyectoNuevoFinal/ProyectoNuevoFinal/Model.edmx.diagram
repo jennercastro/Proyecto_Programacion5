@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7b62bf24ce334ec0aa1b75d8bae587f8" Name="Diagram1">
+        <EntityTypeShape EntityType="fiairap1Model.Adiccion" Width="1.5" PointX="6" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="fiairap1Model.Adiccion_Usuario" Width="1.5" PointX="8.25" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="fiairap1Model.Cobertura_Poliza" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="fiairap1Model.Registro_Poliza" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="fiairap1Model.Tipo_Poliza" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="fiairap1Model.Tipo_Usuario" Width="1.5" PointX="3.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="fiairap1Model.Usuario" Width="1.5" PointX="6" PointY="3.5" IsExpanded="true" />
+        <AssociationConnector Association="fiairap1Model.FK__Adiccion___Cod_A__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="fiairap1Model.FK__Adiccion___Cod_U__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="fiairap1Model.FK__Registro___Cod_C__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="fiairap1Model.FK__Usuario__Cod_Cob__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="fiairap1Model.FK__Registro___Cod_C__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="fiairap1Model.FK__Registro___Cod_T__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="fiairap1Model.FK__Usuario__Cod_Tip__47DBAE45" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

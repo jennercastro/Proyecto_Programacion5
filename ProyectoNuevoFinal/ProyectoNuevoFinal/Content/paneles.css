@@ -1,0 +1,80 @@
+﻿.container {
+    margin-top: 10px;
+}
+
+.panel.panel-pink {
+    border-radius: 0px;
+    box-shadow: 0px 0px 10px #888;
+    border-color: #EF5160;
+}
+
+    .panel.panel-pink .panel-heading {
+        border-radius: 0px;
+        color: #FFF;
+        background-color: #EF5160;
+    }
+
+    .panel.panel-pink .panel-body {
+        background-color: #F2F2F2;
+        color: #4D4D4D;
+    }
+
+.panel.panel-blue {
+    border-radius: 0px;
+    box-shadow: 0px 0px 10px #888;
+    border-color: #266590;
+}
+
+    .panel.panel-blue .panel-heading {
+        border-radius: 0px;
+        color: #FFF;
+        background-color: #266590;
+    }
+
+    .panel.panel-blue .panel-body {
+        background-color: #F2F2F2;
+        color: #4D4D4D;
+    height: 93px;
+    width: 580px;
+}
+
+.panel.panel-yellow {
+    border-radius: 0px;
+    box-shadow: 0px 0px 10px #888;
+    border-color: #EFA13D;
+}
+
+    .panel.panel-yellow .panel-heading {
+        border-radius: 0px;
+        color: #FFF;
+        background-color: #EFA13D;
+    }
+
+    .panel.panel-yellow .panel-body {
+        background-color: #F2F2F2;
+        color: #4D4D4D;
+    }
+
+
+
+#backColor:hover {
+    background: rgb(250, 219, 216 );
+    color: #FFFFFF;
+}
+
+
+#color:hover {
+    background: rgb(171, 235, 198);
+    color: #FFFFFF;
+}
+
+#dd:hover {
+    background: rgb(169, 204, 227 );
+    color: #FFFFFF;
+}
+
+
+#ii:hover {
+    background: rgb(249, 231, 159 );
+    color: #FFFFFF;
+}

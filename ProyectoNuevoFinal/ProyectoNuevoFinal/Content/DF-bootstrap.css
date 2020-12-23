@@ -1,0 +1,95 @@
+.navbar{
+
+	
+    margin:0;
+}
+/*jumbotron*/
+
+.jumbotron {
+    
+    background: #428BCA;
+    color: white;
+    font-size: 20px 0;
+    padding: 20px;
+    margin: 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b3dced+2,29b8e5+27,29b8e5+60,bce0ee+96 */
+    background: rgb(179,220,237); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(179,220,237,1) 2%, rgba(41,184,229,1) 27%, rgba(41,184,229,1) 60%, rgba(188,224,238,1) 96%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(179,220,237,1) 2%,rgba(41,184,229,1) 27%,rgba(41,184,229,1) 60%,rgba(188,224,238,1) 96%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(179,220,237,1) 2%,rgba(41,184,229,1) 27%,rgba(41,184,229,1) 60%,rgba(188,224,238,1) 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=0 ); /* IE6-9 */
+}
+
+.jumbotron .titulo1{
+
+	font-size:40px;
+
+}
+
+/*----POSTS----*/
+
+.main{
+
+	margin-top:20px;
+	margin-bottom:20px;
+	
+}
+
+article{
+	background:#FFFFFF;
+	padding:10px;
+}
+
+.post{
+
+	padding-bottom:20px;
+	margin-bottom:20px;
+	border-bottom:1px solid #999;
+	
+
+}
+
+.post .post-title a {
+
+	color:#333;
+}
+
+.post .thumb{
+
+	margin-right:10px;
+	width:40%;
+
+}
+
+.post .thumb img {
+
+	width:100%;
+
+}
+
+
+
+.post .contenedor-botones {
+
+	width:100%;
+
+}
+footer{
+	background:#000000;
+	color:white;
+	background: -moz-linear-gradient(top, white 0%, #4C68F2 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,white), color-stop(100%,#4C68F2));
+}
+
+body
+{
+    background-color: transparent;
+    background-image: url(img/texture1.jpg);
+	background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+.hf6{
+	color:#FFFFFF;
+}
+
